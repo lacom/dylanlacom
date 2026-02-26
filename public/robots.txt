@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /RSC/
+Sitemap: https://www.dylanla.com/sitemap.xml

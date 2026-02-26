@@ -1,0 +1,28 @@
+{
+  "name": "dylanla-com",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/generate-static-assets.mjs",
+    "dev": "waku dev",
+    "prebuild": "node scripts/generate-static-assets.mjs",
+    "build": "waku build",
+    "start": "waku start",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy dist/public --project-name dylanla-com"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.1",
+    "react": "~19.2.3",
+    "react-dom": "~19.2.3",
+    "react-server-dom-webpack": "~19.2.3",
+    "waku": "1.0.0-alpha.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

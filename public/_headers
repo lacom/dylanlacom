@@ -1,0 +1,26 @@
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/posts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/media/posts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/RSC/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/rss.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/sitemap.xml
+  Cache-Control: public, max-age=0, must-revalidate
+
+/robots.txt
+  Cache-Control: public, max-age=0, must-revalidate
+
+/favicon.ico
+  Cache-Control: public, max-age=604800
